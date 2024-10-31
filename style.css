@@ -1,6 +1,6 @@
 body 
 {
-    background-color: #121212;
+    background-color: #2C2C2C;
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,6 +33,10 @@ p {
     font-size: 1.2em;
     color: #b0b0b0;
 }
+i
+{
+    color: #b0b0b0;
+}
 .site-header
 {
     background-color:#007ACC; 
@@ -61,5 +65,53 @@ p {
 }
 h2
 {
+    color: #E0E0E0;
     margin-left: 5%;
+    font-size: 1.5em;
+}
+.rundesBild
+{
+    border-radius: 20px;
+    border: 3px solid #007ACC;
+    border-color: #007ACC;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%
+}
+.container
+{
+    display: flex;
+
+}
+
+.ProjektHeadline
+{
+    margin-left: 5%;
+    white-space: nowrap;
+}
+.ProjektZusammenfassung
+{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+button
+{
+    all: unset;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border: none;
+    background-color: #2C2C2C;
+    
+    display: inline-block;
+}
+button:hover
+{
+    cursor: pointer;
+    background-color: #1E1E1E;
+}
+a
+{
+    all: unset;
 }
