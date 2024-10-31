@@ -53,9 +53,8 @@ i
 }
 .header-left 
 {
-    display: grid;
-    place-items: center;
-    float: left;
+    display: flex;
+    align-items: center;
 }
 
 .profile-image
@@ -114,4 +113,23 @@ button:hover
 a
 {
     all: unset;
+    cursor: pointer;
+}
+h3
+{
+    color: #E0E0E0;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    font-size:x-large;
+}
+#Aboutme
+{
+    margin-left: 20%;
+}
+#aboutmeNav
+{
+    float: right;
+    margin-left: auto;
+    margin-right: 2%;
 }
