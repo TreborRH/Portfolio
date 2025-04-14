@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STM32Betriebsystem</title>
+</head>
+<body>
+    <header class = "site-header">
+        <div class = "header-left">
+            <a href="https://treborrh.github.io/Portfolio/">
+                <img src="Assets/Profil.png" alt="Profilbild" class="profile-image">
+            </a>
+        </div>
+    </header>
+    <div>
+        <h2 id="ProjektSiteHeadline">STM32 Betriebsystem</h2>
+        <h3>Projektbeschreibung</h3>
+        <p class="projectP">
+            In diesem Projekt habe ich eine betriebsystemähnliche Software für einen STM32-Mikrocontroller programmiert. Sie kann grundlegende Aufgaben wie GPIO-Steuerung, Interrupt-Verwaltung und Timernutzung bewältigen. Die Implementierung dieser Features erfolgte über Low-Level Zugriffe auf Register, wobei einzelne Bits gesetzt/gelöscht werden mussten. Das Betriebsystem kommt komplett ohne externe Libraries oder Frameworks aus. Das Ziel war es den Ablauf von Programmen auf Mikrocontrollern zu verstehen. 
+        </p>
+        <h3>Tools</h3>
+        <p class="projectP">
+            Hardware: STM32L152RE <br>
+            Software: C, STM32CubeIDE (nur als Editor/Compiler verwendet)
+        </p>
+        <h3>Herausforderungen</h3>
+        <p class="projectP">
+            Die größte Herausforderung war das Programmieren ohne HAL oder andere Frameworks. Das erforderte ein genaues Verständnis der Registerstrukturen. Insbesondere das korrekte Setup der ARM Komponente wie NVIC für die Handhabung von Interrupts und Timer waren komplex, aber extrem Lehrreich. So konnte ich lernen wie Mikrocontroller wirklich funktionieren, wenn keine abstrahierenden Libraries verwendet werden.
+        </p>
+        
+        <h3>Vollständiges GitHub Repository</h3>
+        <p class="projectP">
+            Im Repository befinden sich die automatisch generierten Linker- und Startup-Dateien der STM32CubeIDE – diese habe ich nicht selbst geschrieben. Der gesamte Code im <code>Src/</code>- und <code>Inc/</code> Ordner stammt von mir.
+            <br>
+            <a href="https://github.com/TreborRH/Bare-Metal-STM32" class="link">GitHub Repository</a> 
+        </p>
+
+        <h2 id="ProjektSiteHeadline">Ausschnitt aus den Dateien zur GPIO-Steuerung:</h2>
+        <h3>Header-Datei für die GPIO Logic</h3>
+        <div style="text-align: center;">
+            <img src="Assets/stm32headergpio.png" alt="Header-Datei" class="bildHorMed">
+            <br>
+        </div>
+        <h3>C-Datei / GPIO Logik</h3>
+        <div style="text-align: center;">
+            
+            <img src="Assets/stm32sourceCgpio.png" alt="Source-C-Datei" class="bildHorMed">
+
+        </div>
+    </div>
+</body>
+</html>
